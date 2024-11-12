@@ -9,8 +9,8 @@ const OpenSkyDataIngestion = ({ onDataFetched }) => {
           "https://opensky-network.org/api/states/all",
           {
             auth: {
-              username: "jbutler", // Replace with your OpenSky username
-              password: "MarroTech2024@", // Replace with your OpenSky password
+              username: "jbutler", // OpenSky username
+              password: "MarroTech2024@", // OpenSky password
             },
           }
         );
@@ -39,7 +39,7 @@ const OpenSkyDataIngestion = ({ onDataFetched }) => {
     return () => clearInterval(interval);
   }, [onDataFetched]);
 
-  return null; // This component doesn't render anything directly
+  return null; // Nothing
 };
 
 export default OpenSkyDataIngestion;
